@@ -28,8 +28,9 @@ def get_max_deposit():
     for value in per_cent.values():
         deposit.append((money_client * value) / 100)
 
+    print(f" Сумма накопленных средств за год вклада - {deposit} ")
     print(f" Максимальная сумма, которую вы можете заработать - {max(deposit)} ")
-
+    
 
 client = get_max_deposit()
 print(client)
